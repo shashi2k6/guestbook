@@ -4,9 +4,9 @@ import com.galvanize.guestbook.bean.GuestEntry;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import javax.jws.HandlerChain;
 import java.util.ArrayList;
 import java.util.List;
+
 
 @RestController
 public class GuestController {
@@ -23,7 +23,7 @@ public class GuestController {
     @PostMapping("/entries")
     @ResponseStatus(HttpStatus.CREATED)
     public GuestEntry createEntry(@RequestBody GuestEntry guestEntry){
-        guestList.add(guestEntry);
-        return guestList.get(guestList.size()-1);
+       // guestList.add(guestEntry);
+        return guestEntry;
     }
 }
