@@ -11,19 +11,17 @@ import java.util.List;
 @RestController
 public class GuestController {
 
-    private List<GuestEntry> guestList =  new ArrayList();
+    private List<GuestEntry> guestList = new ArrayList();
 
     @GetMapping("/entries")
-    public List getAllGuestEntries(){
-        guestList.add(new GuestEntry(1,"Abaram Lincoln","Awesome site"));
+    public List getAllGuestEntries() {
         return guestList;
     }
 
-
     @PostMapping("/entries")
     @ResponseStatus(HttpStatus.CREATED)
-    public GuestEntry createEntry(@RequestBody GuestEntry guestEntry){
-       // guestList.add(guestEntry);
+    public GuestEntry createEntry(@RequestBody GuestEntry guestEntry) {
+        guestList.add(guestEntry);
         return guestEntry;
     }
 }
