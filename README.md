@@ -22,6 +22,7 @@ All visitors can see a list of every entry in the Guestbook.
 ### `URLs : `
 
 https://guestbookentries.herokuapp.com/entries
+https://guestbook-api-alicia.herokuapp.com/entries
 
 ### `Commands to deploy as container :`
 
