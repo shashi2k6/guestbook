@@ -19,8 +19,18 @@ All visitors can see a list of every entry in the Guestbook.
 |---------------------------------|--------|------------------------------------------------------|
 |/entries                        |POST     | Add the Guest book entries to the memory.
 
-
-
-URLs : 
+### `URLs : `
 
 https://guestbookentries.herokuapp.com/entries
+
+### `Commands to deploy as container :`
+
+`1. heroku login`
+
+`2. heroku container:login`
+
+`3. heroku git:remote -a guestbookentries <Project name in Heroku portal>`
+
+`4. heroku container:push web`
+
+`5. heroku container:release web`
